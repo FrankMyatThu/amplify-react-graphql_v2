@@ -82,26 +82,26 @@ const App = ({ signOut }) => {
           />
           <TextField
             name="name"
-            placeholder="Note Name"
-            label="Note Name"
+            placeholder="Shape Name"
+            label="Shape Name"
             labelHidden
             variation="quiet"
             required
           />
           <TextField
             name="description"
-            placeholder="Note Description"
-            label="Note Description"
+            placeholder="Shape Description"
+            label="Shape Description"
             labelHidden
             variation="quiet"
             required
           />
           <Button type="submit" variation="primary">
-            Create Note
+            Create shape
           </Button>
         </Flex>
       </View>
-      <Heading level={2}>Current Notes</Heading>
+      <Heading level={2}>Current Shape(s)</Heading>
       <View margin="3rem 0">
         {notes.map((note) => (
           <Flex
@@ -122,7 +122,7 @@ const App = ({ signOut }) => {
               />
             )}
             <Button variation="link" onClick={() => deleteNote(note)}>
-              Delete note
+              Delete shape
             </Button>
           </Flex>
         ))}
